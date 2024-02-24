@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad's Daily Health</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container">
+    <br>
+    <div class = "card">
+        <div class = "cardbody">
+            <div class = "row">
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for = "new-entry-date">Date</label>
+                        <input type = "date" class = "form-control" id="new-entry-date">
+                    </div><br>
+                </div>
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for = "new-entry-time">Time</label>
+                        <input type = "time" class = "form-control" id="new-entry-time">
+                    </div><br>
+                </div>
+                
+            </div>
+            <div class = "row">    
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for = "blood-sugar">Blood Sugar</label>
+                        <input type = "number" class = "form-control" id="blood-sugar">
+                    </div>                        
+                </div><br>
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for = "blood-pressure">Blood Pressure</label>
+                        <input type = "text" class = "form-control" id="blood-pressure">
+                        
+                    </div><br>
+                </div>
+            </div> 
+            <button id = "add" class = "btn btn-primary form-control">Add</button>
+        </div>
+    </div>
+    <br>
+
+    
+    <div id="entries" class = "mt-4"></div>
+
+
+    <script src = "node_modules/jquery/dist/jquery.js"></script>
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src = "script.js"></script>
+    
+    
+</body>
+</html>
